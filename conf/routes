@@ -8,5 +8,5 @@
 
 
 # User management API
-#GET     /getGPS                      @controllers.GPS.findUsers
+GET     /getGPS/:lat/:lon/:dist      @controllers.GPSController.findGPS(lat,lon,dist)
 POST    /storeGPS                    @controllers.GPSController.store
